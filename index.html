@@ -35,7 +35,8 @@
             }).join('')
             
             document.querySelector('main').innerHTML = html
-            document.addEventListener('#btn').on('click', e => {
+
+            document.addEventListener('click', e => {
                 if(e.target.matches('#btn')){
                     const article = e.target.closest('article')
                     const id = article.dataset.id
